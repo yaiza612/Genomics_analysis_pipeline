@@ -22,7 +22,7 @@ echo "Sample: " $file
 echo "Type: " $(seqkit stat RNAseq/$file | tail -n1 | awk '{ print $3 }')
 echo "Maximum length of the reads: " $(seqkit stat RNAseq/$file | tail -n1 | awk '{ print $8 }')
 echo "Minimum length of the reads: " $(seqkit stat RNAseq/$file | tail -n1 | awk '{ print $6 }')
-echo "Number of reads: " $(seqkit stat RNAseq/$file | tail -n1 | awk '{print $4}')
+echo "Number of reads: " $(seqkit stat RNAseq/$file | tail -n1 | awk '{ print $4 }');
 done >> basic_checks/genomic_report.txt
 echo "Work done, here it is the report"
 cat basic_checks/genomic_report.txt

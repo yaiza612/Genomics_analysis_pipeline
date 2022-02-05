@@ -43,7 +43,9 @@ do
 B=${arr_bam[i]}
 echo "Sample: " $B
 echo "Total number of records/entries: " $(samtools view -c $B)
-echo "Total number of mapped reads: " $(samtools view -c -F 260 $B);
+echo "Total number of mapped reads: " $(samtools view -c -F 260 $B)
+echo "Aligment statistics :"
+python aligment_statitics.py $B;
 done >> mapping/mapping_report.txt
 # Finish
 echo "Work done, here is the report"
