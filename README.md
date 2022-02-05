@@ -29,6 +29,9 @@ You will obtain the following folders:
 *  proteome: all the files with the proteomes 
 
 The pipeline is made specifically for the lectures of the course of GDAV and only work with the structure of the given folder "final_project". 
+The python scripts of Jaime Huertas Cepas to extract blast results and do the mid point rooting are needed. 
+The R script to realize the Differential expression analysis is base in the original script of Joaquín Giner Lamia. 
+
 In the future, I will improve it adding argument choices and automatical checks to be able to run the pipeline given any type
 of genomic data.
 
